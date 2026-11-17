@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masroor Ul Hasan Syed</title>
+<meta name="description" content="PhD student in computer science at Kennesaw State University. Deep learning for heart signals and medical images, published at MICAD 2026.">
+<meta property="og:title" content="Masroor Ul Hasan Syed">
+<meta property="og:description" content="PhD student at Kennesaw State University. Deep learning for heart signals and medical images, published at MICAD 2026.">
+<meta property="og:type" content="profile">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 19h7l2-3 3 9 4-20 3 14h9' fill='none' stroke='%231a2238' stroke-width='2.6' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Masroor Ul Hasan Syed",
+  "jobTitle": "PhD student, Computer Science",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "Kennesaw State University" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "The University of Texas at Tyler" },
+    { "@type": "CollegeOrUniversity", "name": "Muffakham Jah College of Engineering and Technology" }
+  ],
+  "knowsAbout": ["Deep learning", "ECG analysis", "Medical imaging", "Selective prediction", "Computer vision", "UAV imagery"],
+  "email": "mailto:syedmasroorulhasan2020@gmail.com",
+  "sameAs": ["https://www.linkedin.com/in/syed-masroor-ul-hasan-121730249/", "https://github.com/Masroor0007"]
+}
+</script>
+<style>
+:root {
+  --paper: #ffffff;
+  --ink: #1a2238;
+  --ink-soft: #545c74;
+  --line: #dfe2e9;
+  --accent: #2f4a8a;
+  --grid-minor: #fcebe8;
+  --grid-major: #f5d0ca;
+  --serif: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  --sans: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --rail: 9.5rem;
+  --gap: 2.5rem;
+  --col: 40rem;
+  --indent: calc(var(--rail) + var(--gap));
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1.125rem/1.6 var(--sans); }
+a { color: inherit; text-decoration-line: underline; text-decoration-color: #9aa5c4; text-decoration-thickness: 1.5px; text-underline-offset: .22em; }
+a:hover { text-decoration-color: var(--accent); color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+.wrap { max-width: 66rem; margin: 0 auto; padding: 0 2rem; }
+
+/* Header */
+.top { padding: 5.5rem 0 3rem; }
+.top .wrap { display: grid; grid-template-columns: var(--rail) minmax(0, 42rem); gap: 0 var(--gap); align-items: start; }
+.photo { display: block; width: var(--rail); height: var(--rail); border-radius: 50%; object-fit: cover; background: var(--line); }
+.top h1 {
+  font-family: var(--serif); font-weight: 600; font-variation-settings: "opsz" 60;
+  font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.05; letter-spacing: -.01em; margin: 0 0 .5rem;
+}
+.role { margin: 0 0 1.75rem; font-size: 1.125rem; }
+.lede { font-family: var(--serif); font-size: 1.5rem; line-height: 1.4; margin: 0 0 1rem; max-width: 36rem; }
+.bio { margin: 0 0 2rem; max-width: var(--col); color: var(--ink-soft); }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.5rem; margin: 0; padding: 0; list-style: none; font-weight: 700; }
+.actions a { display: inline-block; padding: .2rem 0; }
+.actions .btn { background: var(--ink); color: #fff; text-decoration: none; padding: .7rem 1.25rem; border-radius: 4px; }
+.actions .btn:hover { background: var(--accent); color: #fff; }
+.actions .btn.ghost { background: #fff; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
+.actions .btn.ghost:hover { color: var(--accent); box-shadow: inset 0 0 0 1.5px var(--accent); }
+
+.trace {
+  height: 40px; opacity: .55;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 80'%3E%3Cpath d='M0 50h40q7-8 14 0h12l4 4 6-44 6 52 5-12h18q13-14 26 0h69' fill='none' stroke='%23545c74' stroke-width='2.4' stroke-linejoin='round'/%3E%3C/svg%3E") repeat-x left center / 100px 40px;
+}
+
+/* Proof */
+.proof { list-style: none; margin: 2.5rem 0 0 var(--indent); padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem 2rem; }
+.proof li { border-top: 1px solid var(--line); padding-top: .9rem; }
+.proof strong { display: block; font-family: var(--serif); font-weight: 600; font-variation-settings: "opsz" 24; font-size: 1.25rem; line-height: 1.25; margin-bottom: .3rem; }
+.proof span { display: block; font-size: .9375rem; line-height: 1.45; color: var(--ink-soft); }
+
+/* Sections */
+section { padding-top: 6rem; }
+h2 {
+  font-family: var(--serif); font-weight: 600; font-variation-settings: "opsz" 36;
+  font-size: 2.125rem; line-height: 1.15; margin: 0 0 2.25rem; padding-left: var(--indent);
+}
+.intro-note { margin: -1.25rem 0 2.5rem var(--indent); max-width: var(--col); color: var(--ink-soft); }
+
+.areas { list-style: none; margin: 0 0 0 var(--indent); padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem 2.5rem; }
+.areas h3 { font-family: var(--serif); font-weight: 600; font-variation-settings: "opsz" 24; font-size: 1.3125rem; line-height: 1.25; margin: 0 0 .5rem; }
+.areas p { margin: 0 0 .6rem; font-size: 1.0625rem; }
+.areas .see { font-size: .9375rem; color: var(--ink-soft); }
+
+.entry { display: grid; grid-template-columns: var(--rail) minmax(0, var(--col)); gap: 0 var(--gap); padding-bottom: 2.75rem; }
+.meta { font-size: .875rem; line-height: 1.5; color: var(--ink-soft); padding-top: .4rem; }
+.meta span { display: block; }
+.status { font-weight: 700; color: var(--ink); }
+.status::before { content: ""; display: inline-block; width: .55rem; height: .55rem; border-radius: 50%; margin-right: .45rem; background: var(--ink); transform: translateY(-.05rem); }
+.status.open { color: var(--ink-soft); }
+.status.open::before { background: transparent; box-shadow: inset 0 0 0 1.5px var(--ink-soft); }
+.entry h3 { font-family: var(--serif); font-weight: 600; font-variation-settings: "opsz" 24; font-size: 1.5rem; line-height: 1.25; margin: 0 0 .5rem; }
+.entry .venue { margin: 0 0 .6rem; font-size: .9375rem; color: var(--ink-soft); }
+.entry p { margin: 0 0 .75rem; }
+.entry ul { margin: 0; padding-left: 1.1rem; }
+.entry li { margin-bottom: .5rem; }
+.entry li::marker { color: #9aa5c4; }
+.entry .actions { padding-left: 0; }
+.entry .actions li { margin-bottom: 0; }
+
+/* Demo panel inside the thesis entry */
+.demo { margin: 1.5rem 0 1.25rem; border: 1px solid var(--grid-major); border-radius: 4px; overflow: hidden; }
+.demo canvas {
+  display: block; width: 100%; aspect-ratio: 16 / 10; cursor: crosshair; touch-action: pan-y;
+  background-color: #fff;
+  background-image:
+    linear-gradient(var(--grid-major) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(var(--grid-minor) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-minor) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px, 8px 8px, 8px 8px;
+}
+.demo figcaption { padding: .9rem 1rem 1rem; border-top: 1px solid var(--grid-major); background: #fff; }
+.readout { display: flex; gap: .7rem; align-items: baseline; font-family: var(--serif); font-style: italic; font-size: 1.1875rem; line-height: 1.35; margin: 0 0 .3rem; }
+.swatch { flex: none; width: .75rem; height: .75rem; border-radius: 50%; transform: translateY(.05rem); }
+.swatch.out { background: transparent !important; border: 1.5px dashed var(--ink); }
+.hint { margin: 0; font-size: .875rem; color: var(--ink-soft); }
+
+.coverage { margin: .25rem 0 .5rem; }
+.bar { display: flex; height: .625rem; border-radius: 2px; overflow: hidden; }
+.bar .kept { width: 84.3%; background: var(--ink); }
+.bar .held { flex: 1; background: repeating-linear-gradient(135deg, #c9cdd8 0 3px, transparent 3px 6px); border: 1px solid #c9cdd8; border-left: 0; }
+.coverage p { margin: .5rem 0 0; font-size: .9375rem; color: var(--ink-soft); }
+
+.news { list-style: none; margin: 0; padding: 0; }
+.news li { display: grid; grid-template-columns: var(--rail) minmax(0, var(--col)); gap: 0 var(--gap); padding: .5rem 0; }
+.news .when { font-size: .875rem; color: var(--ink-soft); padding-top: .15rem; }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: .25rem 0 0; }
+.chips a { font-size: .875rem; font-weight: 700; text-decoration: none; padding: .2rem .65rem; border: 1px solid #b9c0d4; border-radius: 4px; }
+.chips a:hover { border-color: var(--accent); }
+.email-line { margin: .9rem 0 0; font-size: .9375rem; color: var(--ink-soft); }
+/* In progress: blurred passages with a small joke on hover */
+.veil { position: relative; border-radius: 4px; outline-offset: 4px; }
+.blurred { margin: 0; color: var(--ink-soft); filter: blur(5px); user-select: none; -webkit-user-select: none; pointer-events: none; transition: filter .35s ease, opacity .35s ease; }
+.peek {
+  position: absolute; inset: 0; margin: 0; display: flex; flex-wrap: wrap; align-items: center; align-content: center; justify-content: center; gap: .35rem .6rem; padding: 0 .5rem; text-align: center;
+  font-family: var(--serif); font-style: italic; font-size: 1.1875rem; opacity: 0; transition: opacity .35s ease;
+  text-shadow: 0 0 6px #fff, 0 0 12px #fff;
+}
+.peek a { font-family: var(--sans); font-style: normal; font-size: .9375rem; font-weight: 700; }
+.veil:hover .blurred, .veil:focus-within .blurred { filter: blur(8px); opacity: .55; }
+.veil:hover .peek, .veil:focus-within .peek { opacity: 1; }
+@media (hover: none) {
+  .hover-only { display: none; }
+  .blurred { filter: blur(6px); opacity: .55; }
+  .peek { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .blurred, .peek { transition: none; } }
+.skills .entry { padding-bottom: 1.25rem; }
+.skills .entry p { margin: 0; }
+
+footer { padding: 5rem 0 3rem; font-size: .875rem; color: var(--ink-soft); }
+footer p { margin: 0; padding-left: var(--indent); }
+
+@media (max-width: 1000px) {
+  .proof { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .areas { grid-template-columns: 1fr; max-width: var(--col); }
+}
+@media (max-width: 720px) {
+  :root { --indent: 0px; }
+  .wrap { padding: 0 1.25rem; }
+  .top { padding: 3rem 0 2rem; }
+  .top .wrap { grid-template-columns: 1fr; }
+  .photo { width: 5.5rem; height: 5.5rem; margin-bottom: 1.25rem; }
+  .lede { font-size: 1.3125rem; }
+  section { padding-top: 4rem; }
+  h2 { font-size: 1.875rem; margin-bottom: 1.75rem; }
+  .intro-note { margin-top: -.75rem; }
+  .entry { grid-template-columns: 1fr; padding-bottom: 2.25rem; }
+  .news li { grid-template-columns: 1fr; padding: .4rem 0 .6rem; }
+  .meta { padding-top: 0; margin-bottom: .25rem; }
+  .meta span { display: inline; }
+  .meta span + span::before { content: ", "; color: var(--ink-soft); font-weight: 400; }
+  .demo canvas { aspect-ratio: 1 / 1; }
+  .readout { min-height: 4.1em; }
+}
+@media (max-width: 440px) {
+  .proof { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<!--
+  Hello, source reader.
+  People who read page source for fun tend to be my favorite collaborators.
+  The In progress section is blurred on purpose, and yes, you'll find jokes under the blur, not the real text.
+  The real version is one email away: syedmasroorulhasan2020@gmail.com
+-->
+
+<header class="top">
+  <div class="wrap">
+    <div><img class="photo" src="photo.jpg" alt="Masroor Ul Hasan Syed" width="152" height="152" onerror="this.remove()"></div>
+    <div>
+      <h1>Masroor Ul Hasan Syed</h1>
+      <p class="role">PhD student in Computer Science, <a href="https://www.kennesaw.edu/">Kennesaw State University</a></p>
+      <p class="lede">I build deep learning for heart signals and medical images, and I work on making those models reliable enough for clinical use.</p>
+      <p class="bio">My work so far includes a paper at MICAD 2026, an MS thesis on selective prediction, and drone-based computer vision for agriculture. Before graduate school I spent four years as a software developer, so my research code tends to run on more than one laptop.</p>
+      <ul class="actions">
+        <li><a class="btn" href="mailto:syedmasroorulhasan2020@gmail.com">Email me</a></li>
+        <li data-link="cv" hidden><a class="btn ghost" href="#">Download CV</a></li>
+        <li data-link="scholar" hidden><a href="#">Google Scholar</a></li>
+        <li data-link="github" hidden><a href="#">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/syed-masroor-ul-hasan-121730249/">LinkedIn</a></li>
+        <li data-link="orcid" hidden><a href="#">ORCID</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="trace" aria-hidden="true"></div>
+
+<main class="wrap">
+  <ul class="proof" aria-label="At a glance">
+    <li><strong>2 published papers</strong><span>CG-ECG at MICAD 2026, Edinburgh, and MagCount at IPPS</span></li>
+    <li><strong>MS thesis defended</strong><span>University of Texas at Tyler, April 2026</span></li>
+    <li><strong>AWS certified</strong><span><a href="https://www.linkedin.com/posts/masroor-ul-hasan-syed-121730249_mlengineer-machinelearning-aws-activity-7416127485815357440-u0Ix">Machine Learning – Associate</a></span></li>
+    <li><strong>4 years in industry</strong><span>Software developer at Pact Software Solutions</span></li>
+  </ul>
+
+  <section aria-labelledby="news">
+    <h2 id="news">News</h2>
+    <ul class="news">
+      <li><span class="when">Oct 2026</span><span>CG-ECG published at MICAD 2026 in Edinburgh.</span></li>
+      <li><span class="when">Fall 2026</span><span>Started a PhD in Computer Science at <a href="https://www.kennesaw.edu/">Kennesaw State University</a>.</span></li>
+      <li><span class="when">Apr 2026</span><span>Defended my MS thesis on selective prediction for medical AI at <a href="https://www.uttyler.edu/">UT Tyler</a>.</span></li>
+      <li><span class="when">Jan 2026</span><span>Earned the <a href="https://www.linkedin.com/posts/masroor-ul-hasan-syed-121730249_mlengineer-machinelearning-aws-activity-7416127485815357440-u0Ix">AWS Certified Machine Learning – Associate</a> credential.</span></li>
+      <li><span class="when">Oct 2025</span><span>Placed 3rd at the <a href="https://www.linkedin.com/posts/prabhasundaravadivel_ceris-ipps-usdaars-activity-7386600193326026752-SON2">50th IPPS Southern Region Meeting</a>.</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="areas">
+    <h2 id="areas">What I work on</h2>
+    <ul class="areas">
+      <li>
+        <h3>Heart signals</h3>
+        <p>Deep learning on ECGs: classifying recordings, transfer learning, and linking 12-lead signals to the diagnostic statements cardiologists write.</p>
+        <p class="see">ECG–SCP representation and generation, CG-ECG</p>
+      </li>
+      <li>
+        <h3>Reliable clinical AI</h3>
+        <p>Knowing when a model should answer and when a clinician should decide, from ECGs and X-rays to long conversations with language models.</p>
+        <p class="see">MS thesis, PhD survey, LLM drift working paper</p>
+      </li>
+      <li>
+        <h3>Vision from drones</h3>
+        <p>Detecting and counting plants in drone imagery, and hardware that lets a manually flown drone survey a field on its own.</p>
+        <p class="see">MagCount, AgriEye</p>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="done">
+    <h2 id="done">Selected work</h2>
+
+    <article class="entry">
+      <div class="meta"><span class="status">Published</span><span>2026</span></div>
+      <div>
+        <h3>CG-ECG: a selective classification abstention framework for trustworthy ECG classification</h3>
+        <p class="venue">Medical Imaging and Computer-Aided Diagnosis (MICAD) 2026, Edinburgh</p>
+        <p>Before an ECG prediction reaches a clinician, it has to pass two gates: the model must be confident, and the case must fall inside the region of embedding space where that class lives. If either gate fails, the prediction is held back for a human to read.</p>
+        <p class="chips" hidden><a data-link="cgecg-paper" hidden href="#">Paper</a><a data-link="cgecg-code" hidden href="#">Code</a><a data-link="cgecg-slides" hidden href="#">Slides</a></p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta"><span class="status">Defended</span><span>April 2026</span></div>
+      <div>
+        <h3>Deep learning abstention using geometric algorithms</h3>
+        <p class="venue">MS thesis, University of Texas at Tyler. Committee chair: Dr. Yi Li.</p>
+        <p>Each class gets a convex hull in a compressed embedding space, checked with linear programming so no two classes overlap. A prediction is kept only when it lands inside the hull of the class it predicts. I tested it on 1D ECG signals, ECG images and chest X-rays, reaching 99.71% accuracy on the chest X-rays it kept.</p>
+
+        <figure class="demo">
+          <canvas id="hull" tabindex="0" aria-label="Interactive plot of three heartbeat classes, each enclosed by a convex hull. Use the arrow keys to move the test heartbeat." aria-describedby="hint"></canvas>
+          <figcaption>
+            <p class="readout"><span class="swatch out" id="swatch" aria-hidden="true"></span><span id="readout" aria-live="off">Outside every hull, so the model abstains and a clinician makes the call.</span></p>
+            <p class="hint" id="hint">Try it. Each dot is a heartbeat as a trained network sees it, and each outline is the region its class occupies. Move your cursor over the plot to test a new heartbeat.</p>
+          </figcaption>
+        </figure>
+
+        <div class="coverage">
+          <div class="bar" role="img" aria-label="84.3 percent of heartbeat ECGs kept, 15.7 percent passed to a clinician"><span class="kept"></span><span class="held"></span></div>
+          <p>Heartbeat ECGs, MIT-BIH test set: 84.3% of cases kept, and every kept prediction was correct. The other 15.7% went to a clinician.</p>
+        </div>
+        <p class="chips" hidden><a data-link="thesis-pdf" hidden href="#">Thesis PDF</a><a data-link="thesis-code" hidden href="#">Code</a></p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta"><span class="status">Published</span><span>2025</span></div>
+      <div>
+        <h3>MagCount: automated counting of Southern Magnolias for nursery inventory</h3>
+        <p class="venue">International Plant Propagators' Society (IPPS)</p>
+        <p>Drone imagery and a YOLOv8 detector count magnolia trees row by row with 95.2% accuracy, replacing manual inventory counts. Image tiling and iterative retraining got it there, and it also reports crown size and foliage cover for planning.</p>
+        <p class="chips" hidden><a data-link="magcount-paper" hidden href="#">Paper</a><a data-link="magcount-code" hidden href="#">Code</a></p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta"><span class="status">Built</span><span>USDA project</span></div>
+      <div>
+        <h3>AgriEye: turning manual drones into autonomous ones</h3>
+        <p>A compact add-on module for agricultural survey drones in Mississippi. It pairs an onboard object-detection model, exported to ONNX, with an ELRS radio receiver and INAV flight control, so a manually flown drone can fly and count on its own.</p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta"><span class="status">Built</span><span>2021 – 2024</span></div>
+      <div>
+        <h3>Earlier projects</h3>
+        <ul>
+          <li>Real-time PPE detection and alerting: YOLO and face recognition in a Flask web app that flags missing safety gear as it happens (2024).</li>
+          <li>Loan-approval prediction models with 94.3% accuracy, built during a data science internship at YBI Foundation (2023).</li>
+          <li>A Solana app that lets inventors record their inventions early through smart contracts (2023, team project).</li>
+          <li>A deepfake video detection bot, built with a five-person team (2021).</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section aria-labelledby="now">
+    <h2 id="now">In progress</h2>
+    <p class="intro-note">Not published yet, so the details stay blurry for now.<span class="hover-only"> Hover if you’re curious.</span></p>
+
+    <article class="entry">
+      <div class="meta"><span class="status open">In progress</span><span>PhD research</span></div>
+      <div>
+        <h3>Joint ECG–SCP multimodal representation and generation</h3>
+        <div class="veil" tabindex="0">
+          <p class="blurred" aria-hidden="true" data-nosnippet>Hello, source reader. You found the decoy. The real paragraph is still training, and good models don't show their work before validation does. What I can tell you: twelve leads, one shared embedding space, and a lot of GPU hours spent so cardiologists don't have to squint. Email me and you'll get the real version, with fewer jokes and more figures.</p>
+          <p class="peek"><span>Still training. Results when the loss says so.</span> <a href="mailto:syedmasroorulhasan2020@gmail.com?subject=About%20your%20work%20on%20Joint%20ECG%E2%80%93SCP%20multimodal%20representation%20and%20generation">Ask me about it</a></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta"><span class="status open">In progress</span><span>Survey</span></div>
+      <div>
+        <h3>Human–AI collaborative decision-making in physiological signal monitoring</h3>
+        <div class="veil" tabindex="0">
+          <p class="blurred" aria-hidden="true" data-nosnippet>Inspecting the page? Respect. This paragraph is holding a seat for a survey that is still reading the literature so you don't have to. The real version sorts a whole field into one tidy table, which is harder than it sounds and more satisfying than it looks. Until it's out, the best summary is the one I give over email.</p>
+          <p class="peek"><span>Still reading, so you don’t have to.</span> <a href="mailto:syedmasroorulhasan2020@gmail.com?subject=About%20your%20work%20on%20Human%E2%80%93AI%20collaborative%20decision-making%20in%20physiological%20signal%20monitoring">Ask me about it</a></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta"><span class="status open">Working paper</span><span>LLM reliability</span></div>
+      <div>
+        <h3>Perplexity trajectory modeling for epistemic drift detection in multi-turn LLM dialogues</h3>
+        <div class="veil" tabindex="0">
+          <p class="blurred" aria-hidden="true" data-nosnippet>Plot twist: you inspected the page, and the page noticed. This paragraph belongs to a paper about catching conversations before they drift off course, so it drifted into a joke on purpose. The real text stays offline until publication day. If you want the short version, ask me. I'm better at explaining it than this decoy is at hiding it.</p>
+          <p class="peek"><span>Drifting out of focus until it’s published.</span> <a href="mailto:syedmasroorulhasan2020@gmail.com?subject=About%20your%20work%20on%20Perplexity%20trajectory%20modeling%20for%20epistemic%20drift%20detection%20in%20multi-turn%20LLM%20dialogues">Ask me about it</a></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta"><span class="status open">Ongoing</span><span>Field notes</span></div>
+      <div>
+        <h3>Where medical AI breaks after deployment</h3>
+        <div class="veil" tabindex="0">
+          <p class="blurred" aria-hidden="true" data-nosnippet>You've reached the secret level. No treasure here, only a decoy keeping a seat warm for my notes on how medical AI behaves once it leaves the lab and meets a real hospital. The real notes are organized, sourced and slightly opinionated. Email me and I'll share the map, along with the shortcuts I found on the way.</p>
+          <p class="peek"><span>Still mapping. Happy to share the shortcuts.</span> <a href="mailto:syedmasroorulhasan2020@gmail.com?subject=About%20your%20work%20on%20Where%20medical%20AI%20breaks%20after%20deployment">Ask me about it</a></p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section aria-labelledby="path">
+    <h2 id="path">Experience and education</h2>
+
+    <article class="entry">
+      <div class="meta"><span>Now</span></div>
+      <div>
+        <h3>PhD in Computer Science, <a href="https://www.kennesaw.edu/">Kennesaw State University</a></h3>
+        <p>Research assistant working on ECG representation learning and human–AI decision-making in clinical monitoring.</p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta"><span>2024 – 2026</span></div>
+      <div>
+        <h3>MS in Computer and Information Science, <a href="https://www.uttyler.edu/">University of Texas at Tyler</a></h3>
+        <p>Graduate research assistant on drone and computer vision projects for agriculture, graduate teaching assistant in spring 2025, and a thesis on selective prediction for medical AI.</p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta"><span>2020 – 2024</span></div>
+      <div>
+        <h3>Software developer, Pact Software Solutions, Hyderabad</h3>
+        <p>Started as an intern, moved through technical support, then spent three years as a developer writing Python back ends and the interfaces on top of them.</p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta"><span>Undergraduate</span></div>
+      <div>
+        <h3>B.E. in Computer Science, Muffakham Jah College of Engineering and Technology</h3>
+        <p>Ran operations for the Microsoft Student Society with a 15-person team, and led an IEEE Computational Intelligence Society team on a Li-Fi project.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="skills" aria-labelledby="skills">
+    <h2 id="skills">Skills</h2>
+    <div class="entry"><div class="meta"><span>Medical data</span></div><p>12-lead ECG (PTB-XL), heartbeat ECG (MIT-BIH), ECG images, chest X-rays</p></div>
+    <div class="entry"><div class="meta"><span>Methods</span></div><p>CNNs, transfer learning, diffusion models, object detection, selective prediction, SVD projections, convex geometry with linear programming</p></div>
+    <div class="entry"><div class="meta"><span>Libraries</span></div><p>PyTorch, Ultralytics YOLO, ONNX, scikit-learn, SciPy, NumPy, pandas, MATLAB</p></div>
+    <div class="entry"><div class="meta"><span>Engineering</span></div><p>Python, Flask, React, SQL, AWS, drone hardware with INAV and ELRS</p></div>
+  </section>
+
+  <section aria-labelledby="recognition">
+    <h2 id="recognition">Recognition</h2>
+    <article class="entry">
+      <div class="meta"><span>Awards and credentials</span></div>
+      <div>
+        <ul>
+          <li><a href="https://www.linkedin.com/posts/masroor-ul-hasan-syed-121730249_mlengineer-machinelearning-aws-activity-7416127485815357440-u0Ix">AWS Certified Machine Learning – Associate</a></li>
+          <li><a href="https://www.linkedin.com/posts/prabhasundaravadivel_ceris-ipps-usdaars-activity-7386600193326026752-SON2">3rd place at the 50th IPPS Southern Region Meeting</a></li>
+          <li><a href="https://www.linkedin.com/posts/syed-masroor-ul-hasan-121730249_hackathonchampions-innovationmasters-techexcellence-activity-7143651925006180352-ISsY">1st place in a hackathon</a></li>
+          <li>Bronze medal in the Math Olympiad</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">Contact</h2>
+    <article class="entry">
+      <div class="meta"><span>Atlanta area</span></div>
+      <div>
+        <p>I'm glad to hear about research collaborations, internships, or anything on machine learning for health. If your data has a pulse, I'd like to hear about it.</p>
+        <ul class="actions" style="margin-top:1.5rem">
+          <li><a class="btn" href="mailto:syedmasroorulhasan2020@gmail.com">Email me</a></li>
+          <li data-link="cv" hidden><a class="btn ghost" href="#">Download CV</a></li>
+          <li data-link="scholar" hidden><a href="#">Google Scholar</a></li>
+          <li data-link="github" hidden><a href="#">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/syed-masroor-ul-hasan-121730249/">LinkedIn</a></li>
+        </ul>
+        <p class="email-line">syedmasroorulhasan2020@gmail.com</p>
+      </div>
+    </article>
+  </section>
+
+  <footer><p>Updated November 2026. © Masroor Ul Hasan Syed</p></footer>
+</main>
+
+<script>
+// ---------------------------------------------------------------
+// YOUR LINKS: paste a URL between the quotes to show that link.
+// Anything left empty stays hidden, so nothing on the page breaks.
+// ---------------------------------------------------------------
+const LINKS = {
+  cv: 'cv.pdf',          // upload cv.pdf to the repo; the button appears once the file exists
+  scholar: '',           // Google Scholar profile, e.g. https://scholar.google.com/citations?user=...
+  github: 'https://github.com/Masroor0007',
+  orcid: '',             // e.g. https://orcid.org/0000-0000-0000-0000
+  'cgecg-paper': '',  'cgecg-code': '',  'cgecg-slides': '',
+  'thesis-pdf': '',   'thesis-code': '',
+  'magcount-paper': '', 'magcount-code': '',
+};
+
+(() => {
+  if (!LINKS.github && location.hostname.endsWith('.github.io')) LINKS.github = 'https://github.com/' + location.hostname.split('.')[0];
+  const show = (key, url) => document.querySelectorAll(`[data-link="${key}"]`).forEach(el => {
+    const a = el.tagName === 'A' ? el : el.querySelector('a');
+    a.href = url; el.hidden = false;
+  });
+  for (const [key, url] of Object.entries(LINKS)) {
+    if (!url || key === 'cv') continue;
+    show(key, url);
+  }
+  if (LINKS.cv) {
+    if (/^https?:/.test(LINKS.cv)) show('cv', LINKS.cv);
+    else if (location.protocol.startsWith('http')) {
+      fetch(LINKS.cv, { method: 'HEAD' }).then(r => { if (r.ok) show('cv', LINKS.cv); }).catch(() => {});
+    }
+  }
+  document.querySelectorAll('.chips').forEach(c => { c.hidden = ![...c.children].some(a => !a.hidden); });
+})();
+
+// A hello for anyone who opens the developer console
+(() => {
+  const beat = '____/\\  ________/\\  ________/\\  ____\n      \\/          \\/          \\/';
+  console.log('%c' + beat, 'color:#d2675c; font: 13px/1.2 monospace');
+  console.log('%cYou opened the console. You would fit right in on my next project.', 'font: 600 15px Georgia, serif; color:#1a2238');
+  console.log('%cSay hello: syedmasroorulhasan2020@gmail.com  ·  Code: https://github.com/Masroor0007', 'font: 13px system-ui, sans-serif; color:#545c74');
+})();
+
+// Convex-hull demo for the thesis entry
+(() => {
+  const canvas = document.getElementById('hull');
+  const ctx = canvas.getContext('2d');
+  const readout = document.getElementById('readout');
+  const swatch = document.getElementById('swatch');
+  const hint = document.getElementById('hint');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (matchMedia('(pointer: coarse)').matches) {
+    hint.textContent = hint.textContent.replace('Move your cursor over the plot', 'Tap the plot');
+  }
+
+  // Seeded random so the plot looks the same on every visit
+  let seed = 11;
+  const rand = () => { seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+  const gauss = () => { let u = 0; while (!u) u = rand(); const g = Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * rand()); return Math.max(-2, Math.min(2, g)); };
+
+  const classes = [
+    { label: 'Normal rhythm', full: 'normal sinus rhythm', color: '#1f7a6d', c: [.27, .36], s: [.085, .1], n: 30 },
+    { label: 'PVC', full: 'premature ventricular contraction', color: '#3451b2', c: [.75, .3], s: [.07, .075], n: 24 },
+    { label: 'Atrial fibrillation', full: 'atrial fibrillation', color: '#a23b72', c: [.57, .75], s: [.11, .07], n: 26 },
+  ];
+  const cross = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
+  const hullOf = pts => {
+    const p = pts.slice().sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+    const lo = [], up = [];
+    for (const q of p) { while (lo.length > 1 && cross(lo[lo.length - 2], lo[lo.length - 1], q) <= 0) lo.pop(); lo.push(q); }
+    for (const q of p.reverse()) { while (up.length > 1 && cross(up[up.length - 2], up[up.length - 1], q) <= 0) up.pop(); up.push(q); }
+    lo.pop(); up.pop(); return lo.concat(up);
+  };
+  const inside = (h, q) => h.every((a, i) => cross(a, h[(i + 1) % h.length], q) >= 0);
+  for (const k of classes) {
+    k.pts = Array.from({ length: k.n }, () => [k.c[0] + gauss() * k.s[0], k.c[1] + gauss() * k.s[1]]);
+    k.hull = hullOf(k.pts);
+  }
+
+  let W = 0, H = 0, font = 'sans-serif';
+  const pad = 26;
+  const X = x => pad + x * (W - 2 * pad), Y = y => pad + y * (H - 2 * pad);
+  let probe = [.5, .55], state;
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    for (const k of classes) {
+      const on = state === k;
+      ctx.beginPath();
+      k.hull.forEach((p, i) => i ? ctx.lineTo(X(p[0]), Y(p[1])) : ctx.moveTo(X(p[0]), Y(p[1])));
+      ctx.closePath();
+      ctx.globalAlpha = on ? .2 : .09; ctx.fillStyle = k.color; ctx.fill();
+      ctx.globalAlpha = 1; ctx.lineWidth = on ? 2.25 : 1.5; ctx.lineJoin = 'round'; ctx.strokeStyle = k.color; ctx.stroke();
+      for (const p of k.pts) { ctx.beginPath(); ctx.arc(X(p[0]), Y(p[1]), 2.6, 0, 7); ctx.fill(); }
+      const top = k.hull.reduce((m, p) => p[1] < m[1] ? p : m);
+      ctx.font = '700 13px ' + font; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+      const tw = ctx.measureText(k.label).width;
+      const tx = Math.max(tw / 2 + 4, Math.min(W - tw / 2 - 4, X(top[0])));
+      ctx.lineWidth = 4; ctx.strokeStyle = 'rgba(255,255,255,.92)'; ctx.strokeText(k.label, tx, Y(top[1]) - 9);
+      ctx.fillText(k.label, tx, Y(top[1]) - 9);
+    }
+    const px = X(probe[0]), py = Y(probe[1]);
+    if (state) {
+      ctx.beginPath(); ctx.arc(px, py, 15, 0, 7); ctx.globalAlpha = .3; ctx.lineWidth = 1.5; ctx.strokeStyle = state.color; ctx.stroke(); ctx.globalAlpha = 1;
+      ctx.beginPath(); ctx.arc(px, py, 7.5, 0, 7); ctx.fillStyle = state.color; ctx.fill(); ctx.lineWidth = 2.5; ctx.strokeStyle = '#fff'; ctx.stroke();
+    } else {
+      ctx.setLineDash([3, 3]); ctx.beginPath(); ctx.arc(px, py, 10, 0, 7); ctx.lineWidth = 1.5; ctx.strokeStyle = '#1a2238'; ctx.stroke(); ctx.setLineDash([]);
+      ctx.beginPath(); ctx.arc(px, py, 2.5, 0, 7); ctx.fillStyle = '#1a2238'; ctx.fill();
+    }
+  }
+
+  function update() {
+    const k = classes.find(c => inside(c.hull, probe)) || null;
+    if (k !== state) {
+      state = k;
+      readout.textContent = k ? `Inside the ${k.full} hull, so the model answers.` : 'Outside every hull, so the model abstains and a clinician makes the call.';
+      swatch.classList.toggle('out', !k);
+      swatch.style.background = k ? k.color : '';
+    }
+    draw();
+  }
+
+  function resize() {
+    const r = canvas.getBoundingClientRect(), dpr = Math.min(devicePixelRatio || 1, 2);
+    W = r.width; H = r.height;
+    canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    draw();
+  }
+
+  // One short walk-through the first time the plot comes into view, then it waits for the visitor
+  let touched = false, played = false;
+  function walkthrough() {
+    const path = [[.5, .55], [.74, .3], [.5, .55]], leg = 1500, hold = 700, t0 = performance.now();
+    (function step(now) {
+      if (touched) return;
+      const t = Math.max(0, now - t0), per = leg + hold, i = Math.floor(t / per);
+      if (i >= path.length - 1) { probe = path[path.length - 1]; update(); return; }
+      const f = Math.min(1, Math.max(0, (t - i * per - hold) / leg)), s = f * f * (3 - 2 * f);
+      const a = path[i], b = path[i + 1];
+      probe = [a[0] + (b[0] - a[0]) * s, a[1] + (b[1] - a[1]) * s];
+      update();
+      requestAnimationFrame(step);
+    })(t0);
+  }
+  if (!reduce && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver(([en]) => {
+      if (en.isIntersecting && !played) { played = true; io.disconnect(); walkthrough(); }
+    }, { threshold: .6 });
+    io.observe(canvas);
+  }
+
+  const place = e => {
+    touched = true;
+    const r = canvas.getBoundingClientRect();
+    probe = [(e.clientX - r.left - pad) / (W - 2 * pad), (e.clientY - r.top - pad) / (H - 2 * pad)];
+    update();
+  };
+  canvas.addEventListener('pointermove', e => { if (e.pointerType !== 'touch') place(e); });
+  canvas.addEventListener('pointerdown', place);
+  canvas.addEventListener('keydown', e => {
+    const d = { ArrowLeft: [-.03, 0], ArrowRight: [.03, 0], ArrowUp: [0, -.03], ArrowDown: [0, .03] }[e.key];
+    if (!d) return;
+    e.preventDefault(); touched = true;
+    readout.setAttribute('aria-live', 'polite');
+    probe = [Math.max(0, Math.min(1, probe[0] + d[0])), Math.max(0, Math.min(1, probe[1] + d[1]))];
+    update();
+  });
+
+  new ResizeObserver(resize).observe(canvas);
+  if (document.fonts) document.fonts.ready.then(() => { font = getComputedStyle(document.body).fontFamily; draw(); });
+  resize(); update();
+})();
+</script>
+</body>
+</html>
